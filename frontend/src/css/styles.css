@@ -354,6 +354,9 @@ body::-webkit-scrollbar-thumb {
   background: rgba(246, 93, 93, 0.7);
 }
 
+.edit {
+  padding-bottom: 4rem;
+}
 .edit .titleDiv {
   position: relative;
   width: 310px;
@@ -689,6 +692,12 @@ input:-webkit-autofill:active {
   .circlePage .container .card {
     width: 250px;
     height: 250px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1357px) {
+  .circlePage .container {
+    width: 70vw;
+    gap: 4rem;
   }
 }
 @keyframes rotate {

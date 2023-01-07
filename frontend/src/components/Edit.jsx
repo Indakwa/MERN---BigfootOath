@@ -106,10 +106,11 @@ const Edit = () => {
         <form >
 
             <label id='upload' htmlFor="file-input">
-                <img src={preview} alt="a friend of a friend" />
+                <img src={preview} alt="your favorite pic" />
             </label>
             <input 
                 name="image"
+                accept="image/*" 
                 id="file-input" 
                 type="file" 
                 onChange={handleChange("image")}

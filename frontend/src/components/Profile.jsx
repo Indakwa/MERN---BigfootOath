@@ -103,7 +103,7 @@ const Profile = () => {
 
         <div className="container">
             <div className="card">
-                <img src={preview} alt="a friend of a friend" />
+                <img src={preview} alt="your favorite pic" />
                 <p className='nickname'>{user}</p>
             </div>
 
