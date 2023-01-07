@@ -72,6 +72,7 @@ const Login = () => {
                 placeholder='Enter your nickname'
                 onChange={onChange}
                 value={nickname}
+                autoComplete="off"
             />
             
             <input 
