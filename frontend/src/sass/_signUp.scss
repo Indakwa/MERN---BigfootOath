@@ -1,0 +1,132 @@
+.signUp{
+    padding-bottom: 4rem;
+    .titleDiv{
+        position: relative;
+        width: 470px;
+        margin: 0 auto;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+
+        h2{
+            font-size: 2.25rem;
+        }
+
+        hr{
+            border: 2px solid $white;
+            background: $white;
+            opacity: .95;
+            margin: .4rem 0;
+        }
+
+        p{
+            position: absolute;
+            font-style: italic;
+            right: 0;
+        }
+    }
+
+    form{
+        width: 460px;
+        font-size: 0.90625rem;
+        margin: 0 auto;
+
+        input{
+            display: block;
+            background: none;
+            border: none;
+            border-bottom: 2px solid $white;
+            padding: 1rem;
+            margin-bottom: 1.2rem;
+            width: 100%;
+            color: $white;
+            transition: .5s ease;
+        }
+
+        ::placeholder{
+            font-family: 'Montserrat', sans-serif;
+            color: $white;
+            opacity: .9;
+            font-size: 0.90625rem;
+        }
+
+        input:focus{
+            outline: none;
+            background: rgba(#000000, .2);
+        }
+
+        #upload{
+            position: relative;
+            display: block;
+            padding: 1rem;
+            color: $white;
+            transition: .5s ease;
+
+            span{
+                display: inline-block;
+                color: $white;
+                background: rgba(78, 155, 156, 0.94);
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-left: .4rem;
+                transition: .5s ease;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+
+                #uploadIcon{
+                    position: relative;
+                    color: $white;
+                    top: .1rem;
+                }
+            }
+        }
+
+        button{
+            position: relative;
+            padding: 1rem 2rem;
+            background: $pink;
+            color: $white;
+            outline: none;
+            border: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-top: 2rem;
+            transition: .5s ease;
+            cursor: pointer;
+
+            &:hover{
+                background: rgb(181, 110, 122);
+            }
+
+            #submitIcon{
+                margin-left: 2rem;
+                position: relative;
+                top: .2rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    #toLogin{
+        width: 460px;
+        margin: 0 auto;
+        font-size: .9rem;
+        margin-top: 4rem;
+
+        a{
+            color: rgba(241, 178, 200, 0.9);
+            font-size: 1rem;
+            text-decoration: none;
+            transition: .5s ease;
+
+            &:hover{
+                color: pink;
+            }
+        }
+    }
+}

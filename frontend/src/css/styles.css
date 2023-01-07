@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: rgba(255, 255, 255, 0.91);
+  transition: 0.5s ease;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #4a677e;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #2f4455;
+}
+
+.signUp {
+  padding-bottom: 4rem;
+}
+.signUp .titleDiv {
+  position: relative;
+  width: 470px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.signUp .titleDiv h2 {
+  font-size: 2.25rem;
+}
+.signUp .titleDiv hr {
+  border: 2px solid rgba(255, 255, 255, 0.91);
+  background: rgba(255, 255, 255, 0.91);
+  opacity: 0.95;
+  margin: 0.4rem 0;
+}
+.signUp .titleDiv p {
+  position: absolute;
+  font-style: italic;
+  right: 0;
+}
+.signUp form {
+  width: 460px;
+  font-size: 0.90625rem;
+  margin: 0 auto;
+}
+.signUp form input {
+  display: block;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.91);
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.91);
+  transition: 0.5s ease;
+}
+.signUp form ::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.91);
+  opacity: 0.9;
+  font-size: 0.90625rem;
+}
+.signUp form input:focus {
+  outline: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+.signUp form #upload {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.91);
+  transition: 0.5s ease;
+}
+.signUp form #upload span {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.91);
+  background: rgba(78, 155, 156, 0.94);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 0.4rem;
+  transition: 0.5s ease;
+}
+.signUp form #upload span:hover {
+  transform: scale(1.1);
+}
+.signUp form #upload span #uploadIcon {
+  position: relative;
+  color: rgba(255, 255, 255, 0.91);
+  top: 0.1rem;
+}
+.signUp form button {
+  position: relative;
+  padding: 1rem 2rem;
+  background: rgba(207, 133, 159, 0.9);
+  color: rgba(255, 255, 255, 0.91);
+  outline: none;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.signUp form button:hover {
+  background: rgb(181, 110, 122);
+}
+.signUp form button #submitIcon {
+  margin-left: 2rem;
+  position: relative;
+  top: 0.2rem;
+  font-size: 1.2rem;
+}
+.signUp #toLogin {
+  width: 460px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+.signUp #toLogin a {
+  color: rgba(241, 178, 200, 0.9);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.signUp #toLogin a:hover {
+  color: pink;
+}
+
+.circlePage {
+  position: relative;
+}
+.circlePage .titleDiv {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  left: -4rem;
+}
+.circlePage .titleDiv h2 {
+  font-size: 2.25rem;
+}
+.circlePage .titleDiv hr {
+  border: 2px solid rgba(255, 255, 255, 0.91);
+  background: rgba(255, 255, 255, 0.91);
+  opacity: 0.95;
+  margin: 0.4rem 0;
+}
+.circlePage .titleDiv p {
+  position: absolute;
+  font-style: italic;
+  right: 0;
+}
+.circlePage #toProfile {
+  color: rgba(255, 255, 255, 0.91);
+  position: absolute;
+  font-size: 2.6rem;
+  right: 8rem;
+  top: 0rem;
+  transition: 0.5s ease;
+}
+.circlePage #toProfile:hover {
+  color: rgba(207, 133, 159, 0.9);
+}
+.circlePage .container {
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.circlePage .container .card {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+}
+.circlePage .container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.8s ease;
+  animation-name: zoom;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+.circlePage .container .card p {
+  backdrop-filter: blur(100px);
+  background: rgba(47, 68, 85, 0.71);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.circlePage #copy {
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.6rem;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.profile {
+  position: relative;
+}
+.profile .titleDiv {
+  position: relative;
+  width: 310px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.profile .titleDiv h2 {
+  font-size: 2.25rem;
+}
+.profile .titleDiv hr {
+  border: 2px solid rgba(255, 255, 255, 0.91);
+  background: rgba(255, 255, 255, 0.91);
+  opacity: 0.95;
+  margin: 0.4rem 0;
+}
+.profile .titleDiv p {
+  position: absolute;
+  font-style: italic;
+  right: 0;
+}
+.profile #back {
+  color: rgba(255, 255, 255, 0.91);
+  position: absolute;
+  font-size: 2.6rem;
+  left: 8rem;
+  top: 0rem;
+  transition: 0.5s ease;
+}
+.profile #back:hover {
+  transform: translateX(-0.5rem);
+  color: rgba(207, 133, 159, 0.9);
+}
+.profile .container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.profile .container .card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.profile .container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.8s ease;
+  animation-name: zoom;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+.profile .container .card p {
+  backdrop-filter: blur(100px);
+  background: rgba(47, 68, 85, 0.71);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.profile .container button {
+  position: relative;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.2rem;
+  text-align: start;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.91);
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.profile .container button .icon {
+  position: absolute;
+  right: 2rem;
+}
+.profile .container #editBtn {
+  background: rgba(55, 111, 112, 0.9);
+}
+.profile .container #editBtn:hover {
+  background: rgb(74, 144, 145);
+}
+.profile .container #logoutBtn {
+  background: rgba(135, 173, 176, 0.88);
+}
+.profile .container #logoutBtn:hover {
+  background: rgba(144, 189, 193, 0.98);
+}
+.profile .container #deleteBtn {
+  background: rgba(255, 85, 85, 0.6);
+}
+.profile .container #deleteBtn:hover {
+  background: rgba(246, 93, 93, 0.7);
+}
+
+.edit .titleDiv {
+  position: relative;
+  width: 310px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.edit .titleDiv h2 {
+  font-size: 2.25rem;
+}
+.edit .titleDiv hr {
+  border: 2px solid rgba(255, 255, 255, 0.91);
+  background: rgba(255, 255, 255, 0.91);
+  opacity: 0.95;
+  margin: 0.4rem 0;
+}
+.edit .titleDiv p {
+  position: absolute;
+  font-style: italic;
+  right: 0;
+}
+.edit #back {
+  color: rgba(255, 255, 255, 0.91);
+  position: absolute;
+  font-size: 2.6rem;
+  left: 8rem;
+  top: 4rem;
+  transition: 0.5s ease;
+}
+.edit #back:hover {
+  transform: translateX(-0.5rem);
+  color: rgba(207, 133, 159, 0.9);
+}
+.edit form {
+  width: 300px;
+  font-size: 0.90625rem;
+  margin: 0 auto;
+}
+.edit form input {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.91);
+  padding: 1rem;
+  margin-bottom: 4rem;
+  color: rgba(255, 255, 255, 0.91);
+  transition: 0.5s ease;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.edit form ::placeholder {
+  color: rgba(255, 255, 255, 0.91);
+  opacity: 0.9;
+  font-size: 0.90625rem;
+  text-align: center;
+}
+.edit form input:focus {
+  outline: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+.edit form #upload {
+  display: block;
+  color: rgba(255, 255, 255, 0.91);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.edit form #upload img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+.edit form button {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem 2rem;
+  background: rgba(74, 143, 144, 0.9);
+  color: rgba(255, 255, 255, 0.91);
+  outline: none;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.edit form button:hover {
+  background: rgba(85, 172, 173, 0.9);
+}
+.edit form button #saveIcon {
+  margin-left: 0.6rem;
+  position: relative;
+  top: 0.1rem;
+  font-size: 1.3rem;
+}
+
+.isLoading {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(47, 68, 85, 0.5);
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.isLoading #spinnerIcon {
+  font-size: 4rem;
+  margin: 2rem;
+  animation: rotate 5s linear infinite;
+}
+.isLoading p {
+  font-size: 2rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.91);
+  -webkit-box-shadow: 0 0 0 30px #2f4455 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-position: right;
+  }
+  .signUp .titleDiv {
+    width: 90vw;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  .signUp .titleDiv h2 {
+    font-size: 1.5rem;
+  }
+  .signUp .titleDiv hr {
+    margin: 0.2rem 0;
+  }
+  .signUp .titleDiv p {
+    font-size: 0.7rem;
+  }
+  .signUp form {
+    width: 89vw;
+    font-size: 0.9rem;
+  }
+  .signUp form input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.91);
+    padding: 0.5rem;
+    margin-bottom: 1.3rem;
+  }
+  .signUp form ::placeholder {
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
+  .signUp form #upload {
+    padding: 0.5rem;
+  }
+  .signUp #toLogin {
+    width: 90vw;
+    font-size: 0.7rem;
+  }
+  .signUp #toLogin a {
+    font-size: 0.9rem;
+  }
+  .isLoading {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(47, 68, 85, 0.5);
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+  .isLoading #spinnerIcon {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    animation: rotate 5s linear infinite;
+    margin-top: -7.5rem;
+  }
+  .isLoading p {
+    font-size: 1rem;
+    margin-top: -8rem;
+  }
+  .circlePage .titleDiv {
+    width: 80vw;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    left: 0rem;
+  }
+  .circlePage .titleDiv h2 {
+    font-size: 1.5rem;
+  }
+  .circlePage .titleDiv hr {
+    margin: 0.2rem 0;
+  }
+  .circlePage .titleDiv p {
+    font-size: 0.7rem;
+  }
+  .circlePage #toProfile {
+    font-size: 1.8rem;
+    right: 1.5rem;
+    top: -1.5rem;
+  }
+  .circlePage .container {
+    width: 90vw;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .circlePage .container .card {
+    width: 70vw;
+    height: 70vw;
+  }
+  .circlePage .container .card img {
+    animation-duration: 15s;
+  }
+  .circlePage .container .card p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .edit .titleDiv {
+    width: 70vw;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  .edit .titleDiv h2 {
+    font-size: 1.5rem;
+  }
+  .edit .titleDiv hr {
+    margin: 0.2rem 0;
+  }
+  .edit .titleDiv p {
+    font-size: 0.7rem;
+  }
+  .edit #back {
+    font-size: 1.6rem;
+    left: 1rem;
+    top: 1rem;
+  }
+  .edit form {
+    width: 300px;
+    font-size: 0.90625rem;
+    margin: 0 auto;
+  }
+  .edit form input {
+    width: 70%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.91);
+    margin-bottom: 4rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .edit form input:focus {
+    outline: none;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .edit form #upload {
+    width: 65vw;
+    height: 65vw;
+  }
+  .edit form button {
+    font-size: 1rem;
+  }
+  .edit form button:hover {
+    background: rgba(85, 172, 173, 0.9);
+  }
+  .edit form button #saveIcon {
+    top: 0.1rem;
+    font-size: 1.2rem;
+  }
+  .profile .titleDiv {
+    width: 70vw;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  .profile .titleDiv h2 {
+    font-size: 1.5rem;
+  }
+  .profile .titleDiv hr {
+    margin: 0.2rem 0;
+  }
+  .profile .titleDiv p {
+    font-size: 0.7rem;
+  }
+  .profile #back {
+    font-size: 1.6rem;
+    left: 1rem;
+    top: -2rem;
+  }
+  .profile .container {
+    max-width: 70vw;
+    margin: 0 auto;
+  }
+  .profile .container .card {
+    position: relative;
+    width: 70vw;
+    height: 70vw;
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+  .profile .container .card img {
+    animation-duration: 20s;
+  }
+  .profile .container .card p {
+    font-size: 1rem;
+  }
+  .profile .container button {
+    width: 80%;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  .circlePage .container {
+    width: 80vw;
+    gap: 4rem;
+  }
+  .circlePage .container .card {
+    width: 250px;
+    height: 250px;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=styles.css.map */
