@@ -57,8 +57,8 @@ const SignUp = () => {
           } else{
 
             let formData = new FormData();
-            formData.append("nickname", data.nickname);
-            formData.append("email", data.email);
+            formData.append("nickname", (data.nickname).trim());
+            formData.append("email", (data.email).trim());
             formData.append("password", data.password);
             formData.append("image", data.image);
 
